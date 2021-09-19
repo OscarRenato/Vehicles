@@ -30,6 +30,7 @@ namespace Vehicles.API
                 x.UseSqlServer(Configuration.GetConnectionString("VehiclesConnection"));
             });
 
+            services.AddTransient<SeedDb>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
