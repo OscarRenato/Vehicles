@@ -130,7 +130,6 @@ namespace Vehicles.API.Controllers
             return View(vehicleType);
         }
 
-        // POST: VehicleTypes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
